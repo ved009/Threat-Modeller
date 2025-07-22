@@ -1,0 +1,20 @@
+{
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist/threat-modeller" }
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/index.py" },
+    { "src": "(.*)", "dest": "frontend/dist/threat-modeller/$1" }
+  ],
+  "env": {
+    "GEMINI_API_KEY": "@GEMINI_API_KEY"
+  }
+}
