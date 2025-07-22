@@ -12,7 +12,8 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "api/index.py" },
-    { "src": "(.*)", "dest": "frontend/dist/threat-modeller/$1" }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "frontend/dist/threat-modeller/index.html" }
   ],
   "env": {
     "GEMINI_API_KEY": "AIzaSyB-lF8abWV6zRcPZMEeFhogoIH-Uf_k8i4"
