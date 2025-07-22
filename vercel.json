@@ -15,6 +15,6 @@
     { "src": "(.*)", "dest": "frontend/dist/threat-modeller/$1" }
   ],
   "env": {
-    "GEMINI_API_KEY": "@GEMINI_API_KEY"
+    "GEMINI_API_KEY": "AIzaSyB-lF8abWV6zRcPZMEeFhogoIH-Uf_k8i4"
   }
 }
