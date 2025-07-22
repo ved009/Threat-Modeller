@@ -6,3 +6,5 @@ venv/
 # Node
 node_modules/
 frontend/dist/
+frontend/.angular/
+frontend/package-lock.json
