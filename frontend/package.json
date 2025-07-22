@@ -7,9 +7,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.0.0",
-    "@angular/common": "^17.0.0",
-    "@angular/compiler": "^17.0.0",
+
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
     "@angular/platform-browser": "^17.0.0",
@@ -19,7 +17,6 @@
     "zone.js": "^0.14.2"
   },
   "devDependencies": {
-    "@angular/cli": "^17.0.0",
-    "typescript": "^5.2.2"
+
   }
 }
