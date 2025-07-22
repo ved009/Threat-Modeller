@@ -1,0 +1,13 @@
+<div>
+  <input type="file" (change)="onFileSelected($event)" />
+  <div>
+    <label>Description</label>
+    <textarea [(ngModel)]="description"></textarea>
+  </div>
+  <div>
+    <label>Assumptions</label>
+    <textarea [(ngModel)]="assumptions"></textarea>
+  </div>
+  <button (click)="submit()">Submit</button>
+</div>
+<pre *ngIf="result">{{ result | json }}</pre>
